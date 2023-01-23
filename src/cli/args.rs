@@ -1,7 +1,7 @@
 use clap::{Parser, Subcommand};
 use std::path::PathBuf;
 
-const HELP_TEMLATE: &'static str = "
+const HELP_TEMLATE: &str = "
 {before-help} 
  _   _                           _      _              +====+
 | |_(_)_ __  ___    __ __ ____ _| |_ __| |_  ___ _ _   |(::)|
@@ -53,6 +53,8 @@ pub enum Commands {
         #[arg(short, long)]
         actual: Option<String>,
     },
+
+    Check {},
 
     End {
         /// subtracts the time given from the start

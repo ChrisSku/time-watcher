@@ -8,7 +8,8 @@ description = "A simple Time Watcher for work"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-chrono = "0.4.23"
+chrono = { version = "0.4.23", features = ["serde"] }
 clap = { version = "4.0.32", features = ["derive"] }
+csv = "1.1.6"
 duration-str = "0.5.0"
-serde = "1.0.152"
+serde = { version = "1.0.152", features = ["derive"] }
